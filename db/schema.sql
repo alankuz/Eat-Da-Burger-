@@ -1,12 +1,18 @@
--- Drops the todolist if it exists currently --
+
+-- Drops the day_planner_db if it already exists --
 DROP DATABASE IF EXISTS burgers_db;
--- Creates the "todolist" database --
+
+-- Create the database day_planner_db and specified it for use.
 CREATE DATABASE burgers_db;
+
 USE burgers_db;
+
+-- Create the table plans.
 CREATE TABLE burgers (
   id int NOT NULL AUTO_INCREMENT,
   burger_name varchar(255) NOT NULL,
-  devoured BOOLEAN DEFAULT 0 NOT NULL,
+  devoured BOOLEAN NOT NULL DEFAULT 0,
   PRIMARY KEY (id)
 );
 
+-- Insert a set of records.

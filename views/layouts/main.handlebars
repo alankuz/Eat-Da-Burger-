@@ -1,9 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Eat Da Burger!</title>
-	</head>
-	<body>
-		{{{ body }}}
-	</body>
+
+<head>
+	<title>Eat Da Burger!</title>
+	<style>
+		body {
+			background-color: rgb(130, 152, 199);
+			font-family:Georgia, 'Times New Roman', Times, serif;
+		}
+
+		li {
+			list-style-type: none;
+			font-size: 20px;;
+		}
+
+		h1 {
+			text-align: center;
+			font-size:36px;
+		}
+		.newburg {
+			height: 45px;
+			display:inline-block;
+    vertical-align: top;
+				font-size: 20px;;
+
+		}
+
+		.column {
+			float: left;
+			width: 49%;
+			text-align: center;
+			border: solid gray 1px;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+	{{{ body }}}
+</body>
+
 </html>
